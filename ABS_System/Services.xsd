@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Services" targetNamespace="http://tempuri.org/Services.xsd" xmlns:mstns="http://tempuri.org/Services.xsd" xmlns="http://tempuri.org/Services.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SalesProductsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SalesProductsConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Accounting_System.Properties.Settings.GlobalReference.Default.SalesProductsConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Services" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Services" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Services">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Service" msprop:Generator_RowEvHandlerName="ServiceRowChangeEventHandler" msprop:Generator_RowDeletedName="ServiceRowDeleted" msprop:Generator_RowDeletingName="ServiceRowDeleting" msprop:Generator_RowEvArgName="ServiceRowChangeEvent" msprop:Generator_TablePropName="Service" msprop:Generator_RowChangedName="ServiceRowChanged" msprop:Generator_UserTableName="Service" msprop:Generator_RowChangingName="ServiceRowChanging" msprop:Generator_RowClassName="ServiceRow" msprop:Generator_TableClassName="ServiceDataTable" msprop:Generator_TableVarName="tableService">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="S_ID" msprop:Generator_ColumnPropNameInTable="S_IDColumn" msprop:Generator_ColumnPropNameInRow="S_ID" msprop:Generator_UserColumnName="S_ID" msprop:Generator_ColumnVarNameInTable="columnS_ID" type="xs:int" />
+              <xs:element name="ServiceCode" msprop:Generator_ColumnPropNameInTable="ServiceCodeColumn" msprop:Generator_ColumnPropNameInRow="ServiceCode" msprop:Generator_UserColumnName="ServiceCode" msprop:Generator_ColumnVarNameInTable="columnServiceCode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CustomerName" msdata:Caption="CustomerID" msprop:Generator_ColumnPropNameInTable="CustomerNameColumn" msprop:Generator_ColumnPropNameInRow="CustomerName" msprop:Generator_UserColumnName="CustomerName" msprop:Generator_ColumnVarNameInTable="columnCustomerName" type="xs:string" />
+              <xs:element name="Service" msdata:Caption="ServiceType" msprop:Generator_ColumnPropNameInTable="ServiceColumn" msprop:Generator_ColumnPropNameInRow="Service" msprop:Generator_UserColumnName="Service" msprop:Generator_ColumnVarNameInTable="columnService" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ServiceCreationDate" msprop:Generator_ColumnPropNameInTable="ServiceCreationDateColumn" msprop:Generator_ColumnPropNameInRow="ServiceCreationDate" msprop:Generator_UserColumnName="ServiceCreationDate" msprop:Generator_ColumnVarNameInTable="columnServiceCreationDate" type="xs:dateTime" />
+              <xs:element name="SubService" msdata:Caption="ItemDescription" msprop:Generator_ColumnPropNameInTable="SubServiceColumn" msprop:Generator_ColumnPropNameInRow="SubService" msprop:Generator_UserColumnName="SubService" msprop:Generator_ColumnVarNameInTable="columnSubService">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmployeeID" msdata:Caption="ProblemDescription" msprop:Generator_ColumnPropNameInTable="EmployeeIDColumn" msprop:Generator_ColumnPropNameInRow="EmployeeID" msprop:Generator_UserColumnName="EmployeeID" msprop:Generator_ColumnVarNameInTable="columnEmployeeID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmployeeName" msdata:Caption="ChargesQuote" msprop:Generator_ColumnPropNameInTable="EmployeeNameColumn" msprop:Generator_ColumnPropNameInRow="EmployeeName" msprop:Generator_UserColumnName="EmployeeName" msprop:Generator_ColumnVarNameInTable="columnEmployeeName" type="xs:decimal" />
+              <xs:element name="EmployeeNumber" msdata:Caption="AdvanceDeposit" msprop:Generator_ColumnPropNameInTable="EmployeeNumberColumn" msprop:Generator_ColumnPropNameInRow="EmployeeNumber" msprop:Generator_UserColumnName="EmployeeNumber" msprop:Generator_ColumnVarNameInTable="columnEmployeeNumber" type="xs:decimal" />
+              <xs:element name="EmployeePhoneNamber" msdata:Caption="EstimatedRepairDate" msprop:Generator_ColumnPropNameInTable="EmployeePhoneNamberColumn" msprop:Generator_ColumnPropNameInRow="EmployeePhoneNamber" msprop:Generator_UserColumnName="EmployeePhoneNamber" msprop:Generator_ColumnVarNameInTable="columnEmployeePhoneNamber" type="xs:dateTime" />
+              <xs:element name="Total" msdata:Caption="Remarks" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_UserColumnName="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" type="xs:double" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_UserColumnName="Status" msprop:Generator_ColumnVarNameInTable="columnStatus">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SubService" msprop:Generator_RowEvHandlerName="SubServiceRowChangeEventHandler" msprop:Generator_RowDeletedName="SubServiceRowDeleted" msprop:Generator_RowDeletingName="SubServiceRowDeleting" msprop:Generator_RowEvArgName="SubServiceRowChangeEvent" msprop:Generator_TablePropName="SubService" msprop:Generator_RowChangedName="SubServiceRowChanged" msprop:Generator_RowChangingName="SubServiceRowChanging" msprop:Generator_TableClassName="SubServiceDataTable" msprop:Generator_RowClassName="SubServiceRow" msprop:Generator_TableVarName="tableSubService" msprop:Generator_UserTableName="SubService">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="S_ID" msprop:Generator_ColumnPropNameInRow="S_ID" msprop:Generator_ColumnPropNameInTable="S_IDColumn" msprop:Generator_ColumnVarNameInTable="columnS_ID" msprop:Generator_UserColumnName="S_ID" type="xs:int" />
+              <xs:element name="ServiceCode" msprop:Generator_ColumnPropNameInRow="ServiceCode" msprop:Generator_ColumnPropNameInTable="ServiceCodeColumn" msprop:Generator_ColumnVarNameInTable="columnServiceCode" msprop:Generator_UserColumnName="ServiceCode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CustomerName" msdata:Caption="CustomerID" msprop:Generator_ColumnPropNameInRow="CustomerName" msprop:Generator_ColumnPropNameInTable="CustomerNameColumn" msprop:Generator_ColumnVarNameInTable="columnCustomerName" msprop:Generator_UserColumnName="CustomerName" type="xs:string" />
+              <xs:element name="Service" msdata:Caption="ServiceType" msprop:Generator_ColumnPropNameInRow="Service" msprop:Generator_ColumnPropNameInTable="ServiceColumn" msprop:Generator_ColumnVarNameInTable="columnService" msprop:Generator_UserColumnName="Service" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ServiceCreationDate" msprop:Generator_ColumnPropNameInRow="ServiceCreationDate" msprop:Generator_ColumnPropNameInTable="ServiceCreationDateColumn" msprop:Generator_ColumnVarNameInTable="columnServiceCreationDate" msprop:Generator_UserColumnName="ServiceCreationDate" type="xs:dateTime" />
+              <xs:element name="SubService" msdata:Caption="ItemDescription" msprop:Generator_ColumnPropNameInRow="SubService" msprop:Generator_ColumnPropNameInTable="SubServiceColumn" msprop:Generator_ColumnVarNameInTable="columnSubService" msprop:Generator_UserColumnName="SubService">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmployeeID" msdata:Caption="ProblemDescription" msprop:Generator_ColumnPropNameInRow="EmployeeID" msprop:Generator_ColumnPropNameInTable="EmployeeIDColumn" msprop:Generator_ColumnVarNameInTable="columnEmployeeID" msprop:Generator_UserColumnName="EmployeeID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmployeeName" msdata:Caption="ChargesQuote" msprop:Generator_ColumnPropNameInRow="EmployeeName" msprop:Generator_ColumnPropNameInTable="EmployeeNameColumn" msprop:Generator_ColumnVarNameInTable="columnEmployeeName" msprop:Generator_UserColumnName="EmployeeName" type="xs:decimal" />
+              <xs:element name="EmployeeNumber" msdata:Caption="AdvanceDeposit" msprop:Generator_ColumnPropNameInRow="EmployeeNumber" msprop:Generator_ColumnPropNameInTable="EmployeeNumberColumn" msprop:Generator_ColumnVarNameInTable="columnEmployeeNumber" msprop:Generator_UserColumnName="EmployeeNumber" type="xs:decimal" />
+              <xs:element name="EmployeePhoneNamber" msdata:Caption="EstimatedRepairDate" msprop:Generator_ColumnPropNameInRow="EmployeePhoneNamber" msprop:Generator_ColumnPropNameInTable="EmployeePhoneNamberColumn" msprop:Generator_ColumnVarNameInTable="columnEmployeePhoneNamber" msprop:Generator_UserColumnName="EmployeePhoneNamber" type="xs:dateTime" />
+              <xs:element name="Total" msdata:Caption="Remarks" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_UserColumnName="Total" type="xs:double" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_UserColumnName="Status">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Service" />
+      <xs:field xpath="mstns:S_ID" />
+    </xs:unique>
+    <xs:unique name="SubService_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SubService" />
+      <xs:field xpath="mstns:S_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
