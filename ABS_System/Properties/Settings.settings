@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="Mode" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+      <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="Name" Type="System.String" Scope="User">
       <Value Profile="(Default)">saa</Value>
@@ -27,7 +27,7 @@
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="Server" Type="System.String" Scope="User">
-      <Value Profile="(Default)">mssql-190581-0.cloudclusters.net,10018</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="SalesProductsConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
