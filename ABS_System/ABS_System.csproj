@@ -470,6 +470,12 @@
     <Compile Include="GeneralDayBook.Designer.cs">
       <DependentUpon>GeneralDayBook.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewFile.Designer.cs">
+      <DependentUpon>NewFile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procedures.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -531,6 +537,12 @@
     </Compile>
     <Compile Include="ServicesReport.Designer.cs">
       <DependentUpon>ServicesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Show_database.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Show_database.Designer.cs">
+      <DependentUpon>Show_database.cs</DependentUpon>
     </Compile>
     <Compile Include="SIS_DBDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -998,6 +1010,9 @@
     <EmbeddedResource Include="GeneralDayBook.resx">
       <DependentUpon>GeneralDayBook.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NewFile.resx">
+      <DependentUpon>NewFile.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Procedures.resx">
       <DependentUpon>Procedures.cs</DependentUpon>
     </EmbeddedResource>
@@ -1234,6 +1249,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="servicesRecord.resx">
       <DependentUpon>servicesRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Show_database.resx">
+      <DependentUpon>Show_database.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SubCategory.resx">
       <DependentUpon>SubCategory.cs</DependentUpon>

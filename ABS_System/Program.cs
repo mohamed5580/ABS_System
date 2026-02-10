@@ -17,7 +17,7 @@ namespace Accounting_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new loading());
+            Application.Run(new Show_database());
         }
     }
 }

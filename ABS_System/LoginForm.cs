@@ -37,6 +37,7 @@ namespace Accounting_System
             InitializeComponent();
             this.FormClosed += new FormClosedEventHandler(formclosed);
             instance = this;
+            UserID.Focus();
         }
         private void formclosed(object sender, FormClosedEventArgs e)
         {
@@ -50,24 +51,18 @@ namespace Accounting_System
                 label3.Parent = pictureBox1;
                 label3.BackColor = Color.Transparent;
 
-
-
                 label5.Parent = pictureBox1;
                 label5.BackColor = Color.Transparent;
+                UserID.Focus();
 
 
-
-
-                fillUsers();
-                UserID.SelectedIndex = 0;
             }
-            catch (Exception ex)
+            catch 
             {
-                MessageBox.Show("عفوا لقد حدث خطأ في الاتصال " + ex.ToString());
+                MessageBox.Show("عفوا لقد حدث خطأ في الاتصال ");
                 DBConfig c = new DBConfig();
                 c.ShowDialog();
             }
-       
 
         }
 
@@ -127,33 +122,96 @@ namespace Accounting_System
                                 {
                                     this.Hide();
                                     basic frm = new basic();
+                                    frm.اToolStripMenuItem.Enabled = true;
+                                    frm.المستخدمينToolStripMenuItem.Enabled = true;
+                                    frm.toolStripMenuItem5.Enabled = true;
+                                    frm.نسخToolStripMenuItem.Enabled = true;
+                                  
+                                    frm.toolStripMenuItem33.Enabled = true;
+                                    frm.toolStripMenuItem19.Enabled = true;
+                                    frm.toolStripMenuItem9.Enabled = true;
+                                    frm.toolStripMenuItem7.Enabled = true;
+                            //        frm.SalesmanToolStripMenuItem.Enabled = true;
+                             //       frm.SendSMSToolStripMenuItem.Enabled = true;
+                                    frm.مرتجعمبيعاتToolStripMenuItem.Enabled = true;
+                                //    frm.ToolStripMenuItemSetting.Enabled = true;
+                                    frm.lblUser.Text = UserID.Text;
+                                    frm.lblUserType.Text = UserType.Text;
+                                    LogFunc(UserID.Text, "Successfully logged in");
                                     frm.Show();
                                 }
-                                else if (UserType.Text == "EMP")
+                                else if (UserType.Text == "Sales Person")
                                 {
                                     this.Hide();
                                     basic frm = new basic();
-                                    frm.btnWallet.Enabled = false;
-                                    frm.button9.Enabled = false;
-                                    frm.button10.Enabled = false;
-                                    frm.button7.Enabled = false;
-                                    frm.button8.Enabled = false;
-                                    frm.toolStripMenuItem2.Enabled = false;
                                     frm.اToolStripMenuItem.Enabled = false;
+                                    frm.المستخدمينToolStripMenuItem.Enabled = false;
+                                    frm.toolStripMenuItem5.Enabled = false;
+                                    frm.نسخToolStripMenuItem.Enabled = false;
+                                    
+                                    frm.toolStripMenuItem33.Enabled = true;
+                                   // frm.StockToolStripMenuItem.Enabled = false;
+                                    //frm.ServiceToolStripMenuItem.Enabled = true;
+                                   // frm.جردالمخزونToolStripMenuItem.Enabled = true;
+                                    frm.toolStripMenuItem19.Enabled = true;
+                                    
+                                    frm.toolStripMenuItem9.Enabled = false;
+                                    frm.toolStripMenuItem7.Enabled = false;
+                                   // frm.SalesmanToolStripMenuItem.Enabled = false;
+                                   // frm.SendSMSToolStripMenuItem.Enabled = false;
+                                    frm.مرتجعمبيعاتToolStripMenuItem.Enabled = true;
+                                    frm.btnProductMaster.Enabled = false;
+                               
+                                    frm.lblUser.Text = UserID.Text;
+                                    frm.lblUserType.Text = UserType.Text;
+                                    LogFunc(UserID.Text, "Successfully logged in");
                                     frm.Show();
                                 }
                                 else if (UserType.Text == "Inventory Manager")
                                 {
                                     this.Hide();
                                     basic frm = new basic();
-                                   
+                                    frm.اToolStripMenuItem.Enabled = false;
+                                    frm.المستخدمينToolStripMenuItem.Enabled = false;
+                                    frm.toolStripMenuItem5.Enabled = false;
+                                    frm.نسخToolStripMenuItem.Enabled = false;
+                                    frm.toolStripMenuItem33.Enabled = true;
+                                  //  frm.StockToolStripMenuItem.Enabled = true;
+                                  //  frm.ServiceToolStripMenuItem.Enabled = false;
+                                  //  frm.جردالمخزونToolStripMenuItem.Enabled = true;
+                                    frm.toolStripMenuItem19.Enabled = false;
+                                    frm.toolStripMenuItem9.Enabled = false;
+                                    frm.toolStripMenuItem7.Enabled = false;
+                                   // frm.SalesmanToolStripMenuItem.Enabled = false;
+                                  //  frm.SendSMSToolStripMenuItem.Enabled = false;
+                                    frm.btnProductMaster.Enabled = false;
+                                
+                                    frm.lblUser.Text = UserID.Text;
+                                    frm.lblUserType.Text = UserType.Text;
+                                    LogFunc(UserID.Text, "Successfully logged in");
                                     frm.Show();
                                 }
                                 else if (UserType.Text == "accountant")
                                 {
                                     this.Hide();
                                     basic frm = new basic();
-                                   
+                                    frm.اToolStripMenuItem.Enabled = false;
+                                    frm.المستخدمينToolStripMenuItem.Enabled = false;
+                                    frm.toolStripMenuItem5.Enabled = false;
+                                    frm.نسخToolStripMenuItem.Enabled = false;
+                                    frm.toolStripMenuItem33.Enabled = false;
+                                  //  frm.StockToolStripMenuItem.Enabled = false;
+                                   // frm.ServiceToolStripMenuItem.Enabled = true;
+                                   // frm.جردالمخزونToolStripMenuItem.Enabled = true;
+                                    frm.toolStripMenuItem19.Enabled = false;
+                                    frm.toolStripMenuItem9.Enabled = true;
+                                    frm.toolStripMenuItem7.Enabled = true;
+                                 //   frm.SalesmanToolStripMenuItem.Enabled = false;
+                                  //  frm.SendSMSToolStripMenuItem.Enabled = false;
+                                    frm.btnProductMaster.Enabled = false;
+                                    frm.lblUser.Text = UserID.Text;
+                                    frm.lblUserType.Text = UserType.Text;
+                                    LogFunc(UserID.Text, "Successfully logged in");
                                     frm.Show();
                                 }
                             }
@@ -215,38 +273,11 @@ namespace Accounting_System
 
         private void gunaButton2_Click(object sender, EventArgs e)
         {
-            this.Hide();
             ChangePassword changePassword = new ChangePassword();
             changePassword.UserID.Focus();
-            changePassword.Show();
+            changePassword.ShowDialog();
         }
-        private void fillUsers()
-        {
-            try
-            {
-                using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
-                {
-                    con.Open();
-                    using (SqlDataAdapter adp = new SqlDataAdapter())
-                    {
-                        adp.SelectCommand = new SqlCommand("SELECT DISTINCT UserID FROM Registration WHERE Active='Yes'", con);
-                        DataSet ds = new DataSet("ds");
-                        adp.Fill(ds);
-                        DataTable dtable = ds.Tables[0];
-                        UserID.Items.Clear();
-                        foreach (DataRow drow in dtable.Rows)
-                        {
-                            UserID.Items.Add(drow[0].ToString());
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
-        }
+      
         public static void LogFunc(string st1, string st2)
         {
             using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
@@ -261,6 +292,16 @@ namespace Accounting_System
                     cmd.ExecuteReader();
                 }
             }
+        }
+
+        private void UserID_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UserID_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

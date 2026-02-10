@@ -31,7 +31,7 @@ namespace Accounting_System
         private void pbDBConfig_Click(object sender, EventArgs e)
         {
             timer1.Enabled = false;
-            DBConfig c = new DBConfig();
+            Show_database c = new Show_database();
             c.ShowDialog();
             timer1.Enabled = true;
         }
@@ -54,10 +54,7 @@ namespace Accounting_System
             }
             catch (Exception ex)
             {
-                MessageBox.Show("عفوا لقد حدث خطأ في الاتصال "+ex.ToString());
-                timer1.Enabled = false;
-                DBConfig c = new DBConfig();
-                c.ShowDialog();
+                MessageBox.Show(ex.ToString());
                 return;
             }
         }
