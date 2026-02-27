@@ -216,7 +216,7 @@
             this.lblUserType.Location = new System.Drawing.Point(11, 23);
             this.lblUserType.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUserType.Name = "lblUserType";
-            this.lblUserType.Size = new System.Drawing.Size(74, 17);
+            this.lblUserType.Size = new System.Drawing.Size(71, 16);
             this.lblUserType.TabIndex = 315;
             this.lblUserType.Text = "User Type";
             this.lblUserType.Visible = false;
@@ -227,7 +227,7 @@
             this.lblUser.Location = new System.Drawing.Point(11, 39);
             this.lblUser.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(38, 17);
+            this.lblUser.Size = new System.Drawing.Size(36, 16);
             this.lblUser.TabIndex = 313;
             this.lblUser.Text = "User";
             this.lblUser.Visible = false;
@@ -287,6 +287,7 @@
             this.Panel1.Name = "Panel1";
             this.Panel1.Size = new System.Drawing.Size(1145, 422);
             this.Panel1.TabIndex = 3;
+            this.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
             // GroupBox4
             // 

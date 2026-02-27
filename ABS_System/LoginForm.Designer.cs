@@ -178,6 +178,7 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "تواصل معنا";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.Visible = false;
             this.label5.FontChanged += new System.EventHandler(this.label5_FontChanged);
             this.label5.Click += new System.EventHandler(this.label5_Click);
             this.label5.MouseHover += new System.EventHandler(this.label5_MouseHover);
@@ -214,7 +215,7 @@
             // UserType
             // 
             this.UserType.Location = new System.Drawing.Point(352, 651);
-            this.UserType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UserType.Margin = new System.Windows.Forms.Padding(4);
             this.UserType.Name = "UserType";
             this.UserType.Size = new System.Drawing.Size(72, 22);
             this.UserType.TabIndex = 64;

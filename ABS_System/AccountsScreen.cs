@@ -31,14 +31,14 @@ namespace Accounting_System
                 using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
                 {
                     con.Open();
-                    string query = @"SELECT [AID]
+                    string query = @"SELECT [AccountID]
                                         ,[AccountCode]
                                         ,[AccountName]
                                         ,[AccountDetails]
                                         ,[AccountDate]
                                     FROM [dbo].[Accounts]                                    
                                     ORDER BY 
-                                        AID;";
+                                        AccountID;";
 
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
@@ -74,7 +74,7 @@ namespace Accounting_System
                 using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
                 {
                     con.Open();
-                    string query = @"SELECT [AID]
+                    string query = @"SELECT [AccountID]
                                         ,[AccountCode]
                                         ,[AccountName]
                                         ,[AccountDetails]
@@ -83,7 +83,7 @@ namespace Accounting_System
                                     WHERE 
                                         AccountName LIKE  @SubCategoryName
                                     ORDER BY 
-                                        AID;
+                                        AccountID;
                                     ";
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
@@ -170,20 +170,17 @@ namespace Accounting_System
         {
             try
             {
-                // التحقق من وجود صف محدد
                 if (dgw.CurrentRow != null && dgw.CurrentRow.Index != -1 && lblSet.Text == "Accounts")
                 {
                     DataGridViewRow selectedRow = dgw.CurrentRow;
 
                     // Assuming the other page is named `AnotherPage`
                     Accounts anotherPage = Accounts.instance;
-                    // الحصول على القيم من الصف المحدد
                     anotherPage.txtID.Text = dgw.CurrentRow.Cells[0].Value.ToString();
                     anotherPage.txtAccountCode.Text = dgw.CurrentRow.Cells[1].Value.ToString();
                     anotherPage.txtAccount.Text = dgw.CurrentRow.Cells[2].Value.ToString();
                     anotherPage.txtAccountDetails.Text = dgw.CurrentRow.Cells[3].Value.ToString();
 
-                    // مثال لتاريخ الإجراء
                     if (dgw.CurrentRow.Cells[4].Value != DBNull.Value)
                     {
                         anotherPage.dtpProcedureCreationDate.Value = Convert.ToDateTime(dgw.CurrentRow.Cells[4].Value);
@@ -199,14 +196,12 @@ namespace Accounting_System
                 }
                 else if (lblSet.Text == "Voucher")
                 {
-                    // التحقق من وجود صف محدد
                     if (dgw.CurrentRow != null && dgw.CurrentRow.Index != -1)
                     {
                         DataGridViewRow selectedRow = dgw.CurrentRow;
 
                         // Assuming the other page is named `AnotherPage`
                         Voucher anotherPage = Voucher.instance;
-                        // الحصول على القيم من الصف المحدد
                         anotherPage.txtAID.Text = dgw.CurrentRow.Cells[0].Value.ToString();
                         anotherPage.txtAccountCode.Text = dgw.CurrentRow.Cells[1].Value.ToString();
                         anotherPage.txtName.Text = dgw.CurrentRow.Cells[2].Value.ToString();
