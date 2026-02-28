@@ -13,4 +13,4 @@ The application features a clean, tile-based dashboard for quick navigation.
 **Key Features /**
 - **Modules:** Employees, Clients, Accounts, Services. | 
 - **Financial Tools:** Payment Vouchers & Employee Payments. | 
-- **UI:** Arabic Right-to-Left (RTL) support. |
+  
